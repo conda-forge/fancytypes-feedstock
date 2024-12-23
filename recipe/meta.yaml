@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fancytypes-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fancytypes-{{ version }}.tar.gz
   sha256: 9205c35ce2a09e0601d41e3c4285c3fe54c311ec3173b86d0dc8fed4dd442be8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - wheel
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - czekitout
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/fancytypes/
