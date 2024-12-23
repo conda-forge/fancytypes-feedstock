@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fancytypes-feed
 
 Home: https://pypi.org/project/fancytypes/
 
-Package license: GPL-3.0
+Package license: GPL-3.0-only
 
 Summary: Contains a base class representing an updatable parameter set that is equipped with methods to facilitate parameter data serialization and validation.
 
