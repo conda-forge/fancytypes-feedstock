@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.8
     - setuptools
     - wheel
     - setuptools-scm
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=3.8
     - czekitout
 
 test:
@@ -31,7 +31,6 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }}
     - pip
 
 about:
