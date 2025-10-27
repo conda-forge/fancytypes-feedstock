@@ -1,5 +1,5 @@
 {% set name = "fancytypes" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fancytypes-{{ version }}.tar.gz
-  sha256: 527f039973ed354966b316a16ef6ba0bc5185aaaca061b9f8fed6a2cbfbed7a3
+  sha256: 52b1118a2c56127a70ccc2c79fc1ea12580c17d36abf01eb9c62521d5b60854c
 
 build:
   noarch: python
